@@ -6,9 +6,9 @@
 
 #如何使用
 
-先创建ViewController继承自DSPopUpViewController
-然后在ViewController创建一些自定义的控件及其他操作
-浮层弹出显示直接调用以下代码
+先创建ViewController继承自DSPopUpViewController   
+然后在ViewController创建一些自定义的控件及其他操作   
+浮层弹出显示直接调用以下代码   
 ```objectivec
 [xxxViewController showInViewController:self.navigationController animated:YES isMaskView:YES];
 ```
