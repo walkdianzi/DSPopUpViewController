@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		13EE54331C74218C002F157A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13EE54321C74218C002F157A /* main.m */; };
+		13EE54361C74218C002F157A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13EE54351C74218C002F157A /* AppDelegate.m */; };
+		13EE543C1C74218C002F157A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13EE543A1C74218C002F157A /* Main.storyboard */; };
+		13EE543E1C74218C002F157A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13EE543D1C74218C002F157A /* Assets.xcassets */; };
+		13EE54411C74218C002F157A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13EE543F1C74218C002F157A /* LaunchScreen.storyboard */; };
+		13EE544C1C74218C002F157A /* DSPopViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 13EE544B1C74218C002F157A /* DSPopViewControllerTests.m */; };
+		13EE54571C74218C002F157A /* DSPopViewControllerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 13EE54561C74218C002F157A /* DSPopViewControllerUITests.m */; };
+		13EE54691C742242002F157A /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13EE54661C742242002F157A /* BaseViewController.m */; };
+		13EE546A1C742242002F157A /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13EE54681C742242002F157A /* RootViewController.m */; };
+		13EE54741C742683002F157A /* UIImage+Blur.m in Sources */ = {isa = PBXBuildFile; fileRef = 13EE54711C742683002F157A /* UIImage+Blur.m */; };
+		13EE54751C742683002F157A /* UIView+frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 13EE54731C742683002F157A /* UIView+frame.m */; };
+		13EE54781C74502D002F157A /* PopFadeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13EE54771C74502D002F157A /* PopFadeViewController.m */; };
+		13EE547D1C7450C8002F157A /* DSPopUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13EE547B1C7450C8002F157A /* DSPopUpViewController.m */; };
+		13EE54871C74578E002F157A /* FadeOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13EE54861C74578E002F157A /* FadeOneViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		13EE54481C74218C002F157A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13EE54261C74218C002F157A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13EE542D1C74218C002F157A;
+			remoteInfo = DSPopViewController;
+		};
+		13EE54531C74218C002F157A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13EE54261C74218C002F157A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13EE542D1C74218C002F157A;
+			remoteInfo = DSPopViewController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		13EE542E1C74218C002F157A /* DSPopViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DSPopViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13EE54321C74218C002F157A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		13EE54341C74218C002F157A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		13EE54351C74218C002F157A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		13EE543B1C74218C002F157A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		13EE543D1C74218C002F157A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		13EE54401C74218C002F157A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		13EE54421C74218C002F157A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13EE54471C74218C002F157A /* DSPopViewControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DSPopViewControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		13EE544B1C74218C002F157A /* DSPopViewControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DSPopViewControllerTests.m; sourceTree = "<group>"; };
+		13EE544D1C74218C002F157A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13EE54521C74218C002F157A /* DSPopViewControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DSPopViewControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		13EE54561C74218C002F157A /* DSPopViewControllerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DSPopViewControllerUITests.m; sourceTree = "<group>"; };
+		13EE54581C74218C002F157A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13EE54651C742242002F157A /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		13EE54661C742242002F157A /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		13EE54671C742242002F157A /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		13EE54681C742242002F157A /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		13EE54701C742683002F157A /* UIImage+Blur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Blur.h"; sourceTree = "<group>"; };
+		13EE54711C742683002F157A /* UIImage+Blur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Blur.m"; sourceTree = "<group>"; };
+		13EE54721C742683002F157A /* UIView+frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+frame.h"; sourceTree = "<group>"; };
+		13EE54731C742683002F157A /* UIView+frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+frame.m"; sourceTree = "<group>"; };
+		13EE54761C74502D002F157A /* PopFadeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopFadeViewController.h; sourceTree = "<group>"; };
+		13EE54771C74502D002F157A /* PopFadeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopFadeViewController.m; sourceTree = "<group>"; };
+		13EE547A1C7450C8002F157A /* DSPopUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSPopUpViewController.h; sourceTree = "<group>"; };
+		13EE547B1C7450C8002F157A /* DSPopUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSPopUpViewController.m; sourceTree = "<group>"; };
+		13EE54851C74578E002F157A /* FadeOneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FadeOneViewController.h; sourceTree = "<group>"; };
+		13EE54861C74578E002F157A /* FadeOneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FadeOneViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		13EE542B1C74218C002F157A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13EE54441C74218C002F157A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13EE544F1C74218C002F157A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13EE54251C74218C002F157A = {
+			isa = PBXGroup;
+			children = (
+				13EE54301C74218C002F157A /* DSPopViewController */,
+				13EE544A1C74218C002F157A /* DSPopViewControllerTests */,
+				13EE54551C74218C002F157A /* DSPopViewControllerUITests */,
+				13EE542F1C74218C002F157A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		13EE542F1C74218C002F157A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13EE542E1C74218C002F157A /* DSPopViewController.app */,
+				13EE54471C74218C002F157A /* DSPopViewControllerTests.xctest */,
+				13EE54521C74218C002F157A /* DSPopViewControllerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		13EE54301C74218C002F157A /* DSPopViewController */ = {
+			isa = PBXGroup;
+			children = (
+				13EE546B1C742374002F157A /* Libs */,
+				13EE54641C742242002F157A /* Controller */,
+				13EE54341C74218C002F157A /* AppDelegate.h */,
+				13EE54351C74218C002F157A /* AppDelegate.m */,
+				13EE543A1C74218C002F157A /* Main.storyboard */,
+				13EE543D1C74218C002F157A /* Assets.xcassets */,
+				13EE543F1C74218C002F157A /* LaunchScreen.storyboard */,
+				13EE54421C74218C002F157A /* Info.plist */,
+				13EE54311C74218C002F157A /* Supporting Files */,
+			);
+			path = DSPopViewController;
+			sourceTree = "<group>";
+		};
+		13EE54311C74218C002F157A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				13EE54321C74218C002F157A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		13EE544A1C74218C002F157A /* DSPopViewControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				13EE544B1C74218C002F157A /* DSPopViewControllerTests.m */,
+				13EE544D1C74218C002F157A /* Info.plist */,
+			);
+			path = DSPopViewControllerTests;
+			sourceTree = "<group>";
+		};
+		13EE54551C74218C002F157A /* DSPopViewControllerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				13EE54561C74218C002F157A /* DSPopViewControllerUITests.m */,
+				13EE54581C74218C002F157A /* Info.plist */,
+			);
+			path = DSPopViewControllerUITests;
+			sourceTree = "<group>";
+		};
+		13EE54641C742242002F157A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				13EE54841C74576E002F157A /* popViewController */,
+				13EE54651C742242002F157A /* BaseViewController.h */,
+				13EE54661C742242002F157A /* BaseViewController.m */,
+				13EE54671C742242002F157A /* RootViewController.h */,
+				13EE54681C742242002F157A /* RootViewController.m */,
+				13EE54761C74502D002F157A /* PopFadeViewController.h */,
+				13EE54771C74502D002F157A /* PopFadeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		13EE546B1C742374002F157A /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				13EE54791C7450C8002F157A /* DSPopBase */,
+				13EE54701C742683002F157A /* UIImage+Blur.h */,
+				13EE54711C742683002F157A /* UIImage+Blur.m */,
+				13EE54721C742683002F157A /* UIView+frame.h */,
+				13EE54731C742683002F157A /* UIView+frame.m */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		13EE54791C7450C8002F157A /* DSPopBase */ = {
+			isa = PBXGroup;
+			children = (
+				13EE547A1C7450C8002F157A /* DSPopUpViewController.h */,
+				13EE547B1C7450C8002F157A /* DSPopUpViewController.m */,
+			);
+			path = DSPopBase;
+			sourceTree = "<group>";
+		};
+		13EE54841C74576E002F157A /* popViewController */ = {
+			isa = PBXGroup;
+			children = (
+				13EE54851C74578E002F157A /* FadeOneViewController.h */,
+				13EE54861C74578E002F157A /* FadeOneViewController.m */,
+			);
+			path = popViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		13EE542D1C74218C002F157A /* DSPopViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13EE545B1C74218C002F157A /* Build configuration list for PBXNativeTarget "DSPopViewController" */;
+			buildPhases = (
+				13EE542A1C74218C002F157A /* Sources */,
+				13EE542B1C74218C002F157A /* Frameworks */,
+				13EE542C1C74218C002F157A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DSPopViewController;
+			productName = DSPopViewController;
+			productReference = 13EE542E1C74218C002F157A /* DSPopViewController.app */;
+			productType = "com.apple.product-type.application";
+		};
+		13EE54461C74218C002F157A /* DSPopViewControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13EE545E1C74218C002F157A /* Build configuration list for PBXNativeTarget "DSPopViewControllerTests" */;
+			buildPhases = (
+				13EE54431C74218C002F157A /* Sources */,
+				13EE54441C74218C002F157A /* Frameworks */,
+				13EE54451C74218C002F157A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				13EE54491C74218C002F157A /* PBXTargetDependency */,
+			);
+			name = DSPopViewControllerTests;
+			productName = DSPopViewControllerTests;
+			productReference = 13EE54471C74218C002F157A /* DSPopViewControllerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		13EE54511C74218C002F157A /* DSPopViewControllerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13EE54611C74218C002F157A /* Build configuration list for PBXNativeTarget "DSPopViewControllerUITests" */;
+			buildPhases = (
+				13EE544E1C74218C002F157A /* Sources */,
+				13EE544F1C74218C002F157A /* Frameworks */,
+				13EE54501C74218C002F157A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				13EE54541C74218C002F157A /* PBXTargetDependency */,
+			);
+			name = DSPopViewControllerUITests;
+			productName = DSPopViewControllerUITests;
+			productReference = 13EE54521C74218C002F157A /* DSPopViewControllerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		13EE54261C74218C002F157A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = dasheng;
+				TargetAttributes = {
+					13EE542D1C74218C002F157A = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					13EE54461C74218C002F157A = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 13EE542D1C74218C002F157A;
+					};
+					13EE54511C74218C002F157A = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 13EE542D1C74218C002F157A;
+					};
+				};
+			};
+			buildConfigurationList = 13EE54291C74218C002F157A /* Build configuration list for PBXProject "DSPopViewController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 13EE54251C74218C002F157A;
+			productRefGroup = 13EE542F1C74218C002F157A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13EE542D1C74218C002F157A /* DSPopViewController */,
+				13EE54461C74218C002F157A /* DSPopViewControllerTests */,
+				13EE54511C74218C002F157A /* DSPopViewControllerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		13EE542C1C74218C002F157A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13EE54411C74218C002F157A /* LaunchScreen.storyboard in Resources */,
+				13EE543E1C74218C002F157A /* Assets.xcassets in Resources */,
+				13EE543C1C74218C002F157A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13EE54451C74218C002F157A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13EE54501C74218C002F157A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		13EE542A1C74218C002F157A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13EE54781C74502D002F157A /* PopFadeViewController.m in Sources */,
+				13EE54741C742683002F157A /* UIImage+Blur.m in Sources */,
+				13EE54361C74218C002F157A /* AppDelegate.m in Sources */,
+				13EE54871C74578E002F157A /* FadeOneViewController.m in Sources */,
+				13EE54691C742242002F157A /* BaseViewController.m in Sources */,
+				13EE547D1C7450C8002F157A /* DSPopUpViewController.m in Sources */,
+				13EE546A1C742242002F157A /* RootViewController.m in Sources */,
+				13EE54751C742683002F157A /* UIView+frame.m in Sources */,
+				13EE54331C74218C002F157A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13EE54431C74218C002F157A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13EE544C1C74218C002F157A /* DSPopViewControllerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13EE544E1C74218C002F157A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13EE54571C74218C002F157A /* DSPopViewControllerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		13EE54491C74218C002F157A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13EE542D1C74218C002F157A /* DSPopViewController */;
+			targetProxy = 13EE54481C74218C002F157A /* PBXContainerItemProxy */;
+		};
+		13EE54541C74218C002F157A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13EE542D1C74218C002F157A /* DSPopViewController */;
+			targetProxy = 13EE54531C74218C002F157A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		13EE543A1C74218C002F157A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13EE543B1C74218C002F157A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		13EE543F1C74218C002F157A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13EE54401C74218C002F157A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		13EE54591C74218C002F157A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		13EE545A1C74218C002F157A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		13EE545C1C74218C002F157A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DSPopViewController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dasheng.DSPopViewController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		13EE545D1C74218C002F157A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DSPopViewController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dasheng.DSPopViewController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		13EE545F1C74218C002F157A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DSPopViewControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dasheng.DSPopViewControllerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DSPopViewController.app/DSPopViewController";
+			};
+			name = Debug;
+		};
+		13EE54601C74218C002F157A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DSPopViewControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dasheng.DSPopViewControllerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DSPopViewController.app/DSPopViewController";
+			};
+			name = Release;
+		};
+		13EE54621C74218C002F157A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DSPopViewControllerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dasheng.DSPopViewControllerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DSPopViewController;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		13EE54631C74218C002F157A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DSPopViewControllerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dasheng.DSPopViewControllerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DSPopViewController;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		13EE54291C74218C002F157A /* Build configuration list for PBXProject "DSPopViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13EE54591C74218C002F157A /* Debug */,
+				13EE545A1C74218C002F157A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13EE545B1C74218C002F157A /* Build configuration list for PBXNativeTarget "DSPopViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13EE545C1C74218C002F157A /* Debug */,
+				13EE545D1C74218C002F157A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		13EE545E1C74218C002F157A /* Build configuration list for PBXNativeTarget "DSPopViewControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13EE545F1C74218C002F157A /* Debug */,
+				13EE54601C74218C002F157A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		13EE54611C74218C002F157A /* Build configuration list for PBXNativeTarget "DSPopViewControllerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13EE54621C74218C002F157A /* Debug */,
+				13EE54631C74218C002F157A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 13EE54261C74218C002F157A /* Project object */;
+}
