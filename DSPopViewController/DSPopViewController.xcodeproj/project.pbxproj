@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13B743031C77125200BC6B7E /* PopTopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B743021C77125200BC6B7E /* PopTopViewController.m */; };
+		13B743061C77129F00BC6B7E /* PositionTopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B743051C77129F00BC6B7E /* PositionTopViewController.m */; };
+		13B743091C77176500BC6B7E /* PopBottomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B743081C77176500BC6B7E /* PopBottomViewController.m */; };
+		13B7430C1C77179C00BC6B7E /* PositionBottomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B7430B1C77179C00BC6B7E /* PositionBottomViewController.m */; };
 		13EE54331C74218C002F157A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13EE54321C74218C002F157A /* main.m */; };
 		13EE54361C74218C002F157A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13EE54351C74218C002F157A /* AppDelegate.m */; };
 		13EE543C1C74218C002F157A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13EE543A1C74218C002F157A /* Main.storyboard */; };
@@ -41,6 +45,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		13B743011C77125200BC6B7E /* PopTopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopTopViewController.h; sourceTree = "<group>"; };
+		13B743021C77125200BC6B7E /* PopTopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopTopViewController.m; sourceTree = "<group>"; };
+		13B743041C77129F00BC6B7E /* PositionTopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PositionTopViewController.h; sourceTree = "<group>"; };
+		13B743051C77129F00BC6B7E /* PositionTopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PositionTopViewController.m; sourceTree = "<group>"; };
+		13B743071C77176500BC6B7E /* PopBottomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopBottomViewController.h; sourceTree = "<group>"; };
+		13B743081C77176500BC6B7E /* PopBottomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopBottomViewController.m; sourceTree = "<group>"; };
+		13B7430A1C77179C00BC6B7E /* PositionBottomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PositionBottomViewController.h; sourceTree = "<group>"; };
+		13B7430B1C77179C00BC6B7E /* PositionBottomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PositionBottomViewController.m; sourceTree = "<group>"; };
 		13EE542E1C74218C002F157A /* DSPopViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DSPopViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13EE54321C74218C002F157A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		13EE54341C74218C002F157A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -168,6 +180,10 @@
 				13EE54681C742242002F157A /* RootViewController.m */,
 				13EE54761C74502D002F157A /* PopFadeViewController.h */,
 				13EE54771C74502D002F157A /* PopFadeViewController.m */,
+				13B743011C77125200BC6B7E /* PopTopViewController.h */,
+				13B743021C77125200BC6B7E /* PopTopViewController.m */,
+				13B743071C77176500BC6B7E /* PopBottomViewController.h */,
+				13B743081C77176500BC6B7E /* PopBottomViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -198,6 +214,10 @@
 			children = (
 				13EE54851C74578E002F157A /* FadeOneViewController.h */,
 				13EE54861C74578E002F157A /* FadeOneViewController.m */,
+				13B743041C77129F00BC6B7E /* PositionTopViewController.h */,
+				13B743051C77129F00BC6B7E /* PositionTopViewController.m */,
+				13B7430A1C77179C00BC6B7E /* PositionBottomViewController.h */,
+				13B7430B1C77179C00BC6B7E /* PositionBottomViewController.m */,
 			);
 			path = popViewController;
 			sourceTree = "<group>";
@@ -337,9 +357,13 @@
 				13EE54361C74218C002F157A /* AppDelegate.m in Sources */,
 				13EE54871C74578E002F157A /* FadeOneViewController.m in Sources */,
 				13EE54691C742242002F157A /* BaseViewController.m in Sources */,
+				13B743061C77129F00BC6B7E /* PositionTopViewController.m in Sources */,
 				13EE547D1C7450C8002F157A /* DSPopUpViewController.m in Sources */,
+				13B7430C1C77179C00BC6B7E /* PositionBottomViewController.m in Sources */,
+				13B743091C77176500BC6B7E /* PopBottomViewController.m in Sources */,
 				13EE546A1C742242002F157A /* RootViewController.m in Sources */,
 				13EE54751C742683002F157A /* UIView+frame.m in Sources */,
+				13B743031C77125200BC6B7E /* PopTopViewController.m in Sources */,
 				13EE54331C74218C002F157A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -568,6 +592,7 @@
 				13EE545D1C74218C002F157A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		13EE545E1C74218C002F157A /* Build configuration list for PBXNativeTarget "DSPopViewControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -576,6 +601,7 @@
 				13EE54601C74218C002F157A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		13EE54611C74218C002F157A /* Build configuration list for PBXNativeTarget "DSPopViewControllerUITests" */ = {
 			isa = XCConfigurationList;
@@ -584,6 +610,7 @@
 				13EE54631C74218C002F157A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

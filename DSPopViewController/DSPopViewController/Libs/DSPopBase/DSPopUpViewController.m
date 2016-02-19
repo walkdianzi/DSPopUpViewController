@@ -178,7 +178,50 @@
 
 - (void)showPositionIsMaskView:(BOOL)isMaskView isBlurView:(BOOL)isBlurView isAnimation:(BOOL)isAnimation{
     
+    if (isMaskView) {
+        CGRect maskFrame;
+        maskFrame = CGRectMake(0, _maskTopMargin, self.view.bounds.size.width, [[UIScreen mainScreen]bounds].size.height - _maskTopMargin);
+        self.maskView.frame = maskFrame;
+        [self.view insertSubview:self.maskView belowSubview:self.contentView];
+    }
     
+    if (isBlurView) {
+        
+        self.blurView = [[UIImageView alloc] initWithImage:_blurImage];
+        self.blurView.frame = _contentFrame;
+        self.blurView.contentMode = UIViewContentModeCenter;
+        self.blurView.clipsToBounds = YES;
+        [self.blurView.layer setCornerRadius:self.contentCornerRadius];
+        [self.view insertSubview:self.blurView belowSubview:self.contentView];                                //特殊效果毛玻璃的背景
+    }
+    
+    self.maskView.backgroundColor = _maskColor;
+    switch (self.position) {
+        case PositionTop:
+            self.contentView.frame = CGRectMake(_contentFrame.origin.x, _contentFrame.origin.y, _contentFrame.size.width, 0);
+            break;
+        case PositionBottom:
+            self.contentView.frame = CGRectMake(_contentFrame.origin.x, _contentFrame.origin.y + _contentFrame.size.height, _contentFrame.size.width, 0);
+        default:
+            break;
+    }
+    
+    [self.contentView.layer setCornerRadius:self.contentCornerRadius];
+    
+    if (isAnimation) {
+        self.maskView.alpha = 0;
+        self.blurView.alpha = 0;
+        self.contentView.alpha = 1;
+        [UIView animateWithDuration:self.animationDuration animations:^{
+            self.maskView.alpha = 1;
+            self.blurView.alpha = 1;
+            self.contentView.frame = _contentFrame;
+        }];
+    }else{
+        self.maskView.alpha = 1;
+        self.blurView.alpha = 1;
+        self.contentView.alpha = 1;
+    }
 }
 
 #pragma mark- 消失
@@ -194,7 +237,17 @@
 - (void)dismissAnimated:(BOOL)animated completion:(void (^)(BOOL finished))completion{
     
     _isShow = NO;
-    [self hideFadeIsAnimation:YES completion:completion];
+    
+    switch (_popAnimationType) {
+        case PopAnimationPosition:
+            [self hidePositionIsAnimation:animated completion:completion];
+            break;
+        case PopAnimationFade:
+            [self hideFadeIsAnimation:animated completion:completion];
+            break;
+        default:
+            break;
+    }
 }
 
 //渐隐动画
@@ -231,7 +284,44 @@
 //位置动画
 - (void)hidePositionIsAnimation:(BOOL)isAnimation completion:(void (^)(BOOL finished))completion{
     
+    void (^completionBlock)(BOOL) = ^(BOOL finished){
+        [self removeFromParentViewControllerCallingAppearanceMethods:YES];
+        if (completion) {
+            completion(finished);
+        }
+    };
     
+    CGRect finallyFrame;
+    switch (self.position) {
+        case PositionTop:
+            finallyFrame = CGRectMake(_contentFrame.origin.x, _contentFrame.origin.y, _contentFrame.size.width, 0);
+            break;
+        case PositionBottom:
+            finallyFrame = CGRectMake(_contentFrame.origin.x, _contentFrame.origin.y+_contentFrame.size.height, _contentFrame.size.width, 0);
+            break;
+        default:
+            break;
+    }
+    
+    if (isAnimation) {
+        
+        void (^animations)() = ^{
+            self.contentView.frame = finallyFrame;
+            self.maskView.alpha = 0;
+            self.blurView.alpha = 0;
+        };
+        [UIView animateWithDuration:self.animationDuration
+                              delay:0
+                            options:kNilOptions
+                         animations:animations
+                         completion:completionBlock];
+        
+    }else{
+        self.contentView.alpha = 0;
+        self.maskView.alpha = 0;
+        self.blurView.alpha = 0;
+        completionBlock(YES);
+    }
 }
 
 #pragma mark UIGestureRecognizerDelegate

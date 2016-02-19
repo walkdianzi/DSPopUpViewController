@@ -26,6 +26,10 @@
                @"fade":@[
                             @"PopFade",
                         ],
+               @"Position":@[
+                            @"PopTop",
+                            @"PopBottom"
+                       ]
              };
     
     _itemsName = @{
@@ -33,6 +37,10 @@
                    @"fade":@[
                            @"PopFade",
                             ],
+                   @"Position":@[
+                           @"PopTop",
+                           @"PopBottom"
+                           ]
                    };
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
     [self.tableView reloadData];
