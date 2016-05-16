@@ -66,21 +66,45 @@
     }
 }
 
+////加到父viewController里  已弃用
+//- (void)addToParentViewController:(UIViewController *)parentViewController callingAppearanceMethods:(BOOL)callAppearanceMethods {
+//    
+//    if (self.parentViewController != nil) {
+//        [self removeFromParentViewControllerCallingAppearanceMethods:callAppearanceMethods];
+//    }
+//    
+//    if (callAppearanceMethods){
+//        [self beginAppearanceTransition:YES animated:NO];
+//    }
+//    [parentViewController addChildViewController:self];
+//    [parentViewController.view addSubview:self.view];
+//    [self didMoveToParentViewController:self];
+//    if (callAppearanceMethods) {
+//        [self endAppearanceTransition];
+//    }
+//}
+
 //加到父viewController里
-- (void)addToParentViewController:(UIViewController *)parentViewController callingAppearanceMethods:(BOOL)callAppearanceMethods {
+- (void)addToParentViewController:(UIViewController *)parentViewController{
     
     if (self.parentViewController != nil) {
-        [self removeFromParentViewControllerCallingAppearanceMethods:callAppearanceMethods];
+        [self willMoveToParentViewController:nil];
+        [self.view removeFromSuperview];
+        [self removeFromParentViewController];
     }
     
-    if (callAppearanceMethods){
-        [self beginAppearanceTransition:YES animated:NO];
-    }
-    [parentViewController addChildViewController:self];
-    [parentViewController.view addSubview:self.view];
-    [self didMoveToParentViewController:self];
-    if (callAppearanceMethods) {
-        [self endAppearanceTransition];
+    UIWindow *window = [UIApplication sharedApplication].keyWindow;
+    
+    if (window) {
+        [window.rootViewController.view addSubview:self.view];
+        [window.rootViewController addChildViewController:self];
+        [self didMoveToParentViewController:window.rootViewController];
+    }else{
+        UIApplication *application = [UIApplication sharedApplication];
+        UIWindow *subWindow = [application.windows objectAtIndex:0];
+        [subWindow.rootViewController.view addSubview:self.view];
+        [subWindow.rootViewController addChildViewController:self];
+        [self didMoveToParentViewController:subWindow.rootViewController];
     }
 }
 
@@ -121,7 +145,7 @@
     _blurImage = [controller.view screenshot];
     _blurImage = [_blurImage applyBlurWithRadius:40 tintColor:self.tintColor saturationDeltaFactor:1.8 maskImage:nil];
     
-    [self addToParentViewController:controller callingAppearanceMethods:YES];
+    [self addToParentViewController:controller];
     self.view.frame = controller.view.bounds;
     
     switch (_popAnimationType) {
@@ -300,6 +324,7 @@
             finallyFrame = CGRectMake(_contentFrame.origin.x, _contentFrame.origin.y+_contentFrame.size.height, _contentFrame.size.width, 0);
             break;
         default:
+            finallyFrame = CGRectMake(0,0,0,0);
             break;
     }
     
